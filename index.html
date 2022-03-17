@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Valentina Rimac" />
+    <title>Seminar</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1>BookBox</h1>
+        <div id="hdr">
+            <nav>
+                <a class="link" href="#">Početna</a>
+                <a class="link" href="#knjigeDio">Knjige</a>
+            </nav>
+            <i class="fas fa-book" id="knjigicaMalaa"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="pocet">
+            <img src="./Slike/main1.jpg" alt="BookBox" , class="bg">
+            <div id="citat">
+                <h3>
+                    A world of books for young and old
+                </h3>
+            </div>
+        </section>
+
+        <section id="popisDodanih">
+            <div id="ukupno">
+                <div id="divCijena" class="uk">
+                    <span>Ukupna cijena:&nbsp;<span id="cijena">0</span>.00 kn</span>
+                    
+                </div>
+            </div>
+            <div id="sideItems"></div>
+            <button id="popisDodanihBtn">Naruči</button>
+        </section>
+
+        <div id="knjigeDio">
+            <h2 class="naslov">Knjige</h2>
+            <section id="knjige">
+                <article class="knjiga">
+
+                    <img src="./Slike/sveStoOstaje.jpg" alt="Sve što ostaje">
+                    <div>
+                        <h3 class="imeKnj">Sve što ostaje</h3>
+                        <h4 class="imeA">Patricia Cornwell</h4>
+                        <small><em class="cijenaKnj">29.00</em> kn</small>
+                    </div>
+                    <div class="btns">
+                        <a href="./HTML/cornwell.html" target="_self" class="knjigaLink">Detaljnije</a>
+                        <button class="knjigaBtn">Dodaj</button>
+                    </div>
+
+                </article>
+                <article class="knjiga">
+
+                    <img src="./Slike/nora.jpg" alt="Nora">
+                    <div>
+                        <h3 class="imeKnj">Nora <br /> <small>(Kuća lutaka)</small></h3>
+                        <h4 class="imeA">Henrik Ibsen</h4>
+                        <small><em class="cijenaKnj">15.00</em> kn</small>
+                    </div>
+                    <div class="btns">
+                        <a href="./HTML/nora.html" target="_self" class="knjigaLink">Detaljnije</a>
+                        <button class="knjigaBtn">Dodaj</button>
+
+                </article>
+                <article class="knjiga">
+
+                    <img src="./Slike/stranac.jpg" alt="Stranac">
+                    <div>
+                        <h3 class="imeKnj">Stranac</h3>
+                        <h4 class="imeA">Albert Camus</h4>
+                        <small><em class="cijenaKnj">120.00</em> kn</small>
+                    </div>
+                    <div class="btns">
+                        <a href="./HTML/stranac.html" target="_self" class="knjigaLink">Detaljnije</a>
+                        <button class="knjigaBtn">Dodaj</button>
+
+                </article>
+                <article class="knjiga">
+
+                    <img src="./Slike/pacifik.jpg" alt="Pakao Pacifika">
+                    <div>
+                        <h3 class="imeKnj">Pakao Pacifika<br /> <small>prvi dio</small></h3>
+                        <h4 class="imeA">Boris Prikril</h4>
+                        <small><em class="cijenaKnj">29.00</em> kn</small>
+                    </div>
+                    <div class="btns">
+                        <a href="./HTML/pacifk.html" target="_self" class="knjigaLink">Detaljnije</a>
+                        <button class="knjigaBtn">Dodaj</button>
+
+                </article>
+                <article class="knjiga">
+
+                    <img src="./Slike/karenjina.jpg" alt="Ana Karenjina">
+                    <div>
+                        <h3 class="imeKnj">Ana Karenjina</h3>
+                        <h4 class="imeA">Lav Tolstoj</h4>
+                        <small><em class="cijenaKnj">200.00</em> kn</small>
+                    </div>
+                    <div class="btns">
+                        <a href="./HTML/karenjina.html" target="_self" class="knjigaLink">Detaljnije</a>
+                        <button class="knjigaBtn">Dodaj</button>
+                    </div>
+                </article>
+            </section>
+            </div>
+    </main>
+
+    <footer>
+        <div>
+            <h1>BookBox</h1>
+            <p>Seminar <br /> Valentina Rimac</p>
+        </div>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+
+</body>
+
+
+</html>

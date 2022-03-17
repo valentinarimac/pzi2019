@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%
+}
+
+body{
+    font-family: 'Alegreya', serif;
+    background-color: white;
+    margin: 0;
+
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    z-index: 200;
+    background-color: rgba(234, 201, 153, 0.7);
+    filter: blur(0.1);
+    text-align: center;
+}
+
+#hdr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+}
+
+#hdr a{
+    color:white;
+    text-decoration: none;
+    margin: 0 10px
+}
+
+#hdr i{
+    color: white;
+    margin: 0 10px 0 5px;
+}
+
+header h1{
+    color: white;
+    z-index: 5;
+    padding: 0;
+    margin: 0;
+}
+
+#pocet{
+    margin-bottom: 20px;
+}
+
+.bg {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    opacity: 0.98; 
+    filter: blur(4px);
+}
+
+@media only screen and (min-width: 600px){
+    #citat{
+        font-size: 40px;
+        bottom: 0;
+        top: 0;
+    }
+    .knjiga{
+        width: 400px;
+        height: 220px
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #citat{
+        transform: translateY(-110px);
+        font-size: 20px;
+    }
+    #pocet{
+        margin-bottom: 0;
+    }
+    .knjiga{
+        width: 90%;
+        height: 190px;
+    }
+}
+
+#citat{
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    z-index: 10;
+    color: white;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#citat h3{
+    margin: 0;
+}
+
+#knjige{
+    color: black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.naslov{
+    color: rgb(76, 76, 76);
+    margin-top: 50px;
+    border-width: 3px;
+    border-bottom: solid;
+    border-color: rgba(234, 201, 153, 0.7);
+    text-align: center;
+}
+
+.knjiga{
+    
+    
+    margin: 30px auto;
+    padding: 12px 0;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgba(234, 201, 153, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#knjigicaMalaa:hover{
+    cursor: pointer;
+}
+
+.knjiga:hover{
+    transform: translateY(-5px);
+    background-color: rgba(234, 201, 153, 0.12);
+}
+
+.knjiga img{
+    width: 30%;
+}
+
+.knjiga div{
+    display: flex;
+    justify-content: center;
+    margin: 0 12px;
+    text-align: center;
+}
+
+.knjiga div h4{
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.knjiga div h3{
+    margin: 0 0 10px 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.knjigaLink{
+    width: 100%;
+    background-color: rgba(234, 201, 153, 0.5);
+    border-color: rgba(234, 201, 153, 0.5);
+    border-style: solid;
+    padding: 10px 3px;
+    margin: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+.knjigaLink:hover{
+    transform: translateY(-5px);
+    background-color: rgba(234, 201, 153, 0.12);
+}
+
+.knjigaBtn{
+    background-color: rgba(234, 201, 153, 0.5);
+    border-color: rgba(234, 201, 153, 0.5);
+    border-style: solid;
+    padding: 10px 3px;
+    margin: 3px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Alegreya', serif;
+}
+
+.knjigaBtn:hover{
+    transform: translateY(-5px);
+    background-color: rgba(234, 201, 153, 0.12);
+}
+
+#popisDodanih{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    visibility: hidden;
+    z-index: 10;
+    background-color: rgba(234, 201, 153, 0.75);
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    #popisDodanih.active{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    #popisDodanih.active{
+        width: 30vw;
+    }
+}
+
+#popisDodanih.active{
+    visibility: visible;
+    height: 100%;
+}
+
+#ukupno > div{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    color: white;
+
+}
+
+.uk{
+    font-size: 20px;
+}
+
+#sideItems{
+    color: darkslategrey;
+}
+
+article.sideItems{
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+    padding-top: 5px;
+    background-color: rgba(234, 201, 153, 1);
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+#sideItems div h3{
+    margin: 0;
+}
+
+#sideItems div h4{
+    margin: 0;
+}
+
+#popisDodanihBtn{
+    margin: 5px 5px;
+    background-color: rgba(234, 201, 153, 1);
+    border-color: white;
+    border-style: solid;
+    padding: 10px 3px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Alegreya', serif;
+    z-index: 20;
+    color: white;
+}
+
+#popisDodanihBtn:hover{
+    transform: translateY(-5px);
+    background-color: rgba(234, 201, 153, 0.12);
+}
+
+footer{
+    background-color: rgba(234, 201, 153, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer div{
+    text-align: center;
+}

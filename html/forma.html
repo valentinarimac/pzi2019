@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Valentina Rimac" />
+    <title>Seminar</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/forma.css">
+</head>
+
+<body>
+    <header>
+        <h1>BookBox</h1>
+        <div id="hdr">
+          <nav>
+            <a class="link" href="../index.html#">Početna</a>
+            <a class="link" href="../index.html#knjigeDio">Knjige</a>
+          </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="forma">
+            <h1 id="naslov">Unesite podatke</h1>
+            <form>
+                <div class="formaElementi">
+                    <label for="ime">Ime</label>
+                    <input class="prostori" type="text" name="subject" id="ime" placeholder="Ime" />
+                </div>
+                <div class="formaElementi">
+                    <label for="prezime">Prezime</label>
+                    <input class="prostori" type="text" name="subject" id="prezime" placeholder="Prezime" />
+                </div>
+                <div class="formaElementi">
+                    <label for="adresa">Adresa, grad, poštanski broj</label>
+                    <input class="prostori" type="text" name="subject" id="adresa" placeholder="Adresa, Grad, poštanski broj" />
+                </div>
+                <div class="formaElementi">
+                    <label for="mail">Email</label>
+                    <input class="prostori" type="email" name="email" id="mail" placeholder="example@mail.com" />
+                </div>
+                <div class="formaElementi">
+                    <label for="info">Dodatne informacije</label>
+                    <textarea class="prostori" id="poruka" name="message" rows="4" placeholder="Dodatno"></textarea>
+                </div>
+                <button id="formBtn" type="submit">Potvrdi</button>
+            </form>
+        </section>
+
+        <section id="zavrseno">
+            <h3 id="ime"></h3>
+            <p>Uspješno izvršena narudžba!</p>
+            <button id="zavrsenoBtn">Završi</button>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div>
+            <h1>BookBox</h1>
+            <p>Seminar <br /> Valentina Rimac</p>
+        </div>
+    </footer>
+
+    <script src="./forma.js"></script>
+
+</body>
+</html>        

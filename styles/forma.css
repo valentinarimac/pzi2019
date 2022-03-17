@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alegreya', serif;
+    background-color: white;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: rgba(234, 201, 153, 1);
+    text-align: center;
+}
+
+#hdr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+}
+
+#hdr a{
+    color:white;
+    text-decoration: none;
+    margin: 0 10px
+}
+
+#hdr i{
+    color: white;
+    margin: 0 10px 0 5px;
+}
+
+header h1{
+    color: white;
+    z-index: 5;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#naslov{
+    color: rgb(76, 76, 76);
+    margin-top: 50px;
+    border-width: 3px;
+    border-bottom: solid;
+    border-color: rgba(234, 201, 153, 0.7);
+    text-align: center;
+}
+
+form{
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 600px){
+    #forma form{
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    #forma form{
+        width: 40%;
+    }
+}
+
+#forma form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+  
+.formaElementi{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+  
+.formaElementi label{
+    align-self: flex-start;
+}
+
+.prostori{
+    border-radius: 3%;
+    border-width: 1px;
+    padding: 9px 9px;
+}
+
+.prostori{
+    background-color: rgba(234, 201, 153, 0.2);
+    border-color: rgba(234, 201, 153, 1);
+}
+
+#formBtn{
+    color: white;
+    background-color: rgba(234, 201, 153, 0.8);
+    border-color: rgba(234, 201, 153, 0.5);
+    border-style: solid;
+    padding: 10px 3px;
+    margin: 10px auto;
+    width: 50%;
+    font-size: 16px;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+}
+
+#zavrseno{
+    visibility: hidden;
+    position: fixed;
+    width: 0;
+    height: 0;
+}
+
+#zavrseno.active{
+    width: 50%;
+    height: 50%;
+    margin: auto auto;
+    border-style: solid;
+    border-color: rgba(234, 201, 153, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    visibility: visible;
+}
+
+
+
+
+footer{
+    background-color: rgba(234, 201, 153, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer div{
+    text-align: center;
+}
